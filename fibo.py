@@ -1,8 +1,9 @@
+# Fibonacci series using recursion 
 def fib(n): # write Fibonacci series up to n
-	a, b = 0, 1
-	while b < n:
-		print b,
-		a, b = b, a+b
+   if n <= 1:
+       return n
+   else:
+       return(fib(n-1) + fib(n-2))
 
 def fib2(n): # return Fibonacci series up to n
 	result = []
